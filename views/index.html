@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>Angular-basic</title>
+    <meta name="description" content="Copyright http://blog.fens.me">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app="app">
+
+<ul>
+    <li><a href="http://blog.fens.me/angularjs-express3-bootstrap3/">快速搭建Web环境 Angularjs + Express3 + Bootstrap3</a></li>
+    <li>http://blog.fens.me/angularjs-express3-bootstrap3</li>
+</ul>
+
+<div ng-view></div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="scripts/angular/app.js"></script>
+<script src="scripts/angular/controllers.js"></script>
     <h1><%= title %></h1>
     <p>欢迎使用 <%= title %></p>
     <h1><a href="/login">登录</a></h1>
+
+    <script src="/angular/angular.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
   </body>
 </html>

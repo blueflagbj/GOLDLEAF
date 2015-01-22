@@ -5,7 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-
+exports.index = function(req, res){
+    res.render('index', { title: 'Polls' });
+};
 
 var mongo = require("mongoose"); //
 var models = require("./models"); //引入 model
